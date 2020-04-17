@@ -30,12 +30,16 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '*sz#xlsqr$ls!b^np1nb2(qeu+1ud+8$2*9t@7r+c^)hj8owmz'
+#SECRET_KEY = '*sz#xlsqr$ls!b^np1nb2(qeu+1ud+8$2*9t@7r+c^)hj8owmz'
+
+SECRET_KEY = os.environ.get ('SECRET_KEY')
+# EMAIL_HOST_USER = os.environ.get ('EMAIL_HOST_USER')
+# EMAIL_HOST_PASSWORD = os.environ.get ('EMAIL_HOST_PASSWORD')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['apitesteuna.herokuapp.com']
 
 
 # Application definition
