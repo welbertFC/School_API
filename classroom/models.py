@@ -33,6 +33,7 @@ class Aluno(Base):
     observacao = models.TextField(blank=True, default='')
 
 
+
     class Meta:
         verbose_name = 'aluno'
         verbose_name_plural = 'alunos'
